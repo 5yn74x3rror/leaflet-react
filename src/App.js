@@ -30,7 +30,6 @@ const Events = () => {
       <Popup>You clicked here dumbass!</Popup>
     </Marker>
   );
-
 }
 
 const App = () => (
