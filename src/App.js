@@ -10,7 +10,7 @@ import {
 } from 'react-leaflet';
 import data from './PL.json';
 import MinimapControl from './components/Minimap';
-// import Logger from './components/Logger';
+import Logger from './components/Logger';
 
 const Events = () => {
   const [marker, setMarker] = useState(null);
@@ -45,7 +45,7 @@ const App = () => (
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
     <MinimapControl position="topright" />
-    {/* <Logger /> */}
+    <Logger />
     <GeoJSON data={data.features} />
     <Events />
   </MapContainer>
